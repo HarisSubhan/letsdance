@@ -1,0 +1,292 @@
+:root{
+    --primary:#D71363;
+    --size:3rem;
+    --secondary:#0567F3
+}
+
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background: #0E0837;
+    color: white;
+    font-family: sans-serif;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+.title-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    scale: 1;
+}
+.title-section h2{
+    color: var(--primary);
+    font-weight: normal;
+}
+.title-section h1{
+    font-size: var(--size);
+}
+.title-section p{
+    font-size: 1.3rem;
+}
+.title-section h4{
+    color: var(--primary);
+    font-size: 1rem;
+}
+.social{
+    display: flex;
+    gap: 1rem;
+}
+.title-section button{
+    padding: 0.6rem;
+    margin: 0.7rem 0;
+    background: var(--secondary);
+    color: white;
+    align-self: flex-start;
+    border: none;
+}
+.tours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+.event{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #100726;
+    gap: 1rem;
+    padding: 1rem;
+}
+.music{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.music button{
+    align-self: flex-start;
+    padding: 0.6rem;
+    margin: 0.7rem 0;
+    background: var(--primary);
+    color: white;
+    align-self: flex-start;
+    border: none;
+}
+
+.event-imag{
+    margin-left: auto;
+    background: linear-gradient(135deg, #FEC19C,#9B0F39);
+    width: 400px;
+    padding: 1rem;
+}
+.e-i img{
+    transition: all 0.9s;
+}
+.event-imag:hover .e-i img{
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+}
+.title-section button{
+    align-self: center;
+}
+.journey{
+    color: var(--primary);
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+.video img{
+    width: 80%;
+    height: 80%;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+}
+.us h2{
+    color: var(--primary);
+}
+.us h1{
+    font-size: 39px;
+}
+.text p{
+    margin: 1rem 0;
+}
+.track,.from,.time,.icon,.from-time{
+    display: flex;
+    align-items: center;
+    margin: 0.1rem 0;
+}
+.track{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 7)), url('https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/dj-sound-equipment-at-nightclubs-and-music-festivals-edm-future-house-music-and-so-on.jpg');
+    height: 160vh;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.track h2{
+    color: var(--primary);
+}
+.from-time{    
+    padding: 2rem;
+    background: linear-gradient(45deg, rgb(70, 12, 58), #0E0829, #2B0F47);
+    justify-content: space-between;
+}
+.time,.icon{
+    justify-content: center;
+    gap: 2rem;
+}
+.new-release{
+    width: 20%;
+    padding: 20px;
+    background: linear-gradient(45deg, rgb(70, 12, 58), #0E0829, #2B0F47);
+}
+.new-release h2{
+    font-size: 30px;
+    margin: 0.5rem 0;
+}
+.new-release h1{
+    font-size: 40px;
+    margin: 0.5rem 0;
+}
+.new-release h3{
+    font-size: 20px;
+    margin: 0.5rem 0;
+}
+.new-release,.icon{
+    margin: 0.5rem 0;
+}
+.new-release h5{
+    font-size: 40px;
+    margin: 0.5rem 0;
+}
+.icon-text{
+    display: flex;
+    justify-content: space-around;
+}
+.live-c{
+    text-align: center;
+    font-size: 50px;
+    color: var(--primary);
+    background: #0E0727;
+    margin-top: 3rem;
+}
+.u{
+    text-align: center;
+    font-size: 60px;
+    background: #0E0727;
+}
+.boxc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(-45deg, #460C3A, #0E0829, #2B0F47);
+    padding: 30px;
+
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.mic{
+    padding: 1rem;
+    background: var(--primary);
+}
+.number{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.right{
+    font-size: 30px;
+}
+button{
+    padding: 1rem;
+    border: none;
+    background: #157347;
+    color: white;
+    border-radius: 20px solid #157347;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px) {
+    main{
+        flex-direction:column;
+        width: 100%;
+    }
+    .image-section{
+        z-index:-1;
+        scale:2;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-33%,-50%);
+    }
+    .title-section{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .tours{
+        flex-direction: column;
+        width: 80%;
+    }
+    .event{
+        flex-direction: column;
+        height: 490px;
+    }
+    .event-imag{
+        width: 255px;
+        margin: auto;
+    }
+    .about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .track{
+        flex-direction: column;
+    }
+    .new-release{
+    width: 100%;
+    margin-left: 20px;
+    }
+    .live{
+        margin-top: 30rem;
+    }
+    .right{
+        margin-left: 90px;
+        font-size: 20px;
+    }
+
+
+}
